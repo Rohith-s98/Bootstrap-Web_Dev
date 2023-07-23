@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootCamp</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand ">WebDev BootCamp</a>
+            <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--flex-showcase-->
+    <section class="bg-dark text-light text-center p-5 p-lg-0 pt-lg-5 text-sm-start ">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <p class="lead py-5">
+                      Embark on an exciting journey with our MERN Stack Web Developer Bootcamp! Build modern, full-stack web applications using MongoDB, Express.js, React, and Node.js. Harness the power of these technologies to create impressive, end-to-end solutions. Let's code and shape the future of web development together! 
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#survey">Click to Participate</button>
+                </div>
+                <img class="img-fluid w-50  d-none d-sm-block"src="showcase.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--input-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-6 mb-md-0">Sign Up for Updates</h3>
+                <div class="input-group mb-3 news-input">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!--Grid-Boxes-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">ReactJS</h3>
+                            <p class="card-text">
+                              Master the art of building dynamic user interfaces with ReactJS and unlock the potential of modern web development.
+                            </p>
+                            <a href="#learn-React" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">NodeJS</h3>
+                            <p class="card-text">
+                              Dive into the world of server-side programming with Node.js and learn to build scalable, real-time applications with JavaScript.
+                            </p>
+                            <a href="#learn-Node" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">MongoDB</h3>
+                            <p class="card-text">
+                              Discover the power of NoSQL databases with MongoDB and become proficient in storing and managing data for your web applications.
+                            </p>
+                            <a href="#learn-Mongo" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--learn Section-->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <img src="fundamentals.svg" class="img-fluid"alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn the Fundamentals</h2>
+                    <p>Unleash your creativity with HTML, CSS, and JavaScript - the dynamic trio that powers the web! Dive into HTML and structure your web pages with semantic elements. Style your designs with CSS, adding colors, layouts, and animations to captivate your audience. </p>
+                    <p>Then, bring your pages to life with JavaScript, adding interactivity and functionality that engages users. Embrace the power of front-end development and craft visually stunning, responsive websites that leave a lasting impression. Whether you're a beginner or an experienced developer, our HTML, CSS, and JavaScript courses will elevate your skills and empower you to shape the digital world. Let's code and create the future of web development together!</p>
+                    <a href="#" class="btn btn-light mt-5"><i class="bi bi-chevron-right"></i>Click to Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--new-->
+    <section id="learn-React" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md p-5">
+                    <h2>Learn React</h2>
+                    <p>Experience the magic of ReactJS - the powerhouse of modern web development! Create stunning and responsive web applications with ease using React's virtual DOM and reusable components.</p>
+                    <p> Enjoy lightning-fast performance and a clean, maintainable codebase. Join our ReactJS journey and elevate your web development skills to new heights! Let's build beautiful and scalable web apps together!</p>
+                    <a href="#" class="btn btn-light mt-5"><i class="bi bi-chevron-right"></i>Read More</a>
+                </div>
+                <div class="col-md">
+                    <img src="react.svg" class="img-fluid"alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--new-->
+     <section id="learn-Node" class="p-5 bg-light text-dark">
+      <div class="container">
+          <div class="row">
+              
+              <div class="col-md p-5">
+                  <h2>Learn NodeJS</h2>
+                  <p>Unlock the realm of server-side magic with our Node.js course! Embrace the power of JavaScript beyond the browser as you journey into the world of back-end development. Dive into asynchronous programming, real-time communication, and seamless scalability. With Node.js as your trusty companion, you'll build lightning-fast applications and wield the potential to handle massive user loads effortlessly. Harness the versatility of Node.js to create APIs, server-side logic, and data management systems.</p>
+                  <p>  Are you ready to embrace the future of web development? Join our Node.js course and embark on a thrilling adventure of transforming your coding skills and shaping the digital landscape. Let's conquer the server-side domain together!</p>
+                  <a href="#" class="btn btn-light mt-5"><i class="bi bi-chevron-right"></i>Read More</a>
+              </div>
+              <div class="col-md">
+                  <img src="react.svg" class="img-fluid"alt="">
+              </div>
+          </div>
+      </div>
+  </section>
+   <!--new-->
+   <section id="learn-Mongo" class="p-5 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md p-5">
+                <h2>Learn MongoDB</h2>
+                <p>Embark on a data-driven journey with our MongoDB course! Unleash the power of NoSQL databases and revolutionize the way you store, manage, and retrieve data for your web applications. Dive into the world of document-based storage, flexible schema design, and seamless horizontal scaling. With MongoDB as your data fortress, you'll conquer complex data structures and unleash the potential of real-time applications. Discover the art of high-performance querying and optimize your database for lightning-fast responses. Whether you're a beginner or a seasoned developer, our MongoDB course will equip you with the skills to conquer the data realm and create robust, data-intensive applications that stand the test of time. </p>
+                <p>Are you ready to revolutionize your data handling? Join us and unlock the secrets of MongoDB mastery! Let's embark on a data-driven adventure together!</p>
+                <a href="#" class="btn btn-light mt-5"><i class="bi bi-chevron-right"></i>Read More</a>
+            </div>
+            <div class="col-md">
+                <img src="react.svg" class="img-fluid"alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <!--accordion-->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--item1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      How long?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">In just 6 Months, you'll become a web development wizard with our immersive and transformative course.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Can the bootcamp be attended online?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                    <div class="accordion-body">No, unfortunately, this course is not available for online attendance.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Is there placement assistance provided after the sessions?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Yes, we offer placement assistance to help you kickstart your career as a web developer and connect you with exciting job opportunities in the industry. Your success is our priority, and we're here to support you every step of the way!</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!--instructor-->
+    <section id="instructors"class="bg-primary p-5">
+        <div class="container">
+            <h2 id="instructors" class="text-center text-light">Our Instructors</h2>
+            <p class="text-center text-white mb-5">Our instructors are the driving force behind your web development success, empowering you to reach new heights with their expert guidance and unwavering support.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/11.jpg"
+                        class="rounded-circle mb-3"
+                        alt=""
+                      />
+                      <h3 class="card-title">Steve</h3>
+                      <p class="card-text">React Developer</p>
+                      <a href="#"><i class="bi bi-twitter text-dark m-1"></i></a>
+                      <a href="#"><i class="bi bi-facebook text-dark m-1"></i></a>
+                      <a href="#"><i class="bi bi-linkedin text-dark m-1"></i></a>
+                      <a href="#"><i class="bi bi-whatsapp text-dark m-1"></i></a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                      <div class="card-body text-center">
+                        <img
+                          src="https://randomuser.me/api/portraits/women/12.jpg"
+                          class="rounded-circle mb-3"
+                          alt=""
+                        />
+                        <h3 class="card-title">Maria</h3>
+                        <p class="card-text">Senior React Developer</p>
+                        <a href="#"><i class="bi bi-twitter text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-dark m-1"></i></a>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                      <div class="card-body text-center">
+                        <img
+                          src="https://randomuser.me/api/portraits/women/13.jpg"
+                          class="rounded-circle mb-3"
+                          alt=""
+                        />
+                        <h3 class="card-title">Susan</h3>
+                        <p class="card-text">NodeJS Developer</p>
+                        <a href="#"><i class="bi bi-twitter text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-dark m-1"></i></a>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                      <div class="card-body text-center">
+                        <img
+                          src="https://randomuser.me/api/portraits/men/14.jpg"
+                          class="rounded-circle mb-3"
+                          alt=""
+                        />
+                        <h3 class="card-title">Albon</h3>
+                        <p class="card-text">Backend Architect</p>
+                        <a href="#"><i class="bi bi-twitter text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark m-1"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp text-dark m-1"></i></a>
+                      </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info </h2>
+                    <ul class="list-group-list-group-flush">
+                        <li class="list-group-item"><span class="fw-bold">Main Location:</span>Kottayam</li>
+                        <li class="list-group-item"><span class="fw-bold">Mobile Number:</span>12345 2345678</li>
+                        <li class="list-group-item"><span class="fw-bold">Mail ID:</span>dfbhagage@gmail.com </li>
+                        <li class="list-group-item"><span class="fw-bold">Student Mail:</span>gdvvgvv@gmail.com</li>
+                        <li class="list-group-item"><span class="fw-bold">Student Mob No:</span>123456789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; Frontend</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        </div>
+    </section>
+    <!-- Modal -->
+<div class="modal fade" id="survey" tabindex="-1" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">Fill Out the form...</p>
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">First Name</label>
+            <input id="first-name"type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">Last Name</label>
+            <input id="first-name"type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="first-name" class="col-form-label">Mob:</label>
+            <input id="first-name"type="text" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
